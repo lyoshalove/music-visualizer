@@ -1,0 +1,77 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+button {
+  border: none;
+  background: none;
+  outline: none;
+  color: inherit;
+  font-size: inherit;
+  font-family: inherit;
+  cursor: pointer;
+}
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  min-height: 100vh;
+  background: #111111;
+  color: #fff;
+}
+
+canvas {
+  position: fixed;
+  left: 0;
+  top: 0;
+}
+
+.menu {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 25px;
+}
+
+.menu__left {
+  display: flex;
+  align-items: center;
+}
+
+.file {
+  display: none;
+}
+
+.btn {
+  background: #222121;
+  padding: 8px 15px;
+  margin: 0 15px 0 0;
+}
+
+.duration {
+  -webkit-appearance: none;
+  height: 2px;
+  width: 200px;
+  background: #fff;
+}
+
+.duration::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  background: #fff;
+  cursor: pointer;
+  width: 17px;
+  height: 17px;
+  border-radius: 50%;
+}
+
+.song {
+  display: block;
+  cursor: pointer;
+}

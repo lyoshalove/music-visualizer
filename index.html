@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>music visualizer</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <div class="wrapper">
+
+    <canvas id="canvas"></canvas>
+
+    <div class="menu">
+      <div class="menu__left">
+        <button class="btn play">Включить</button>
+        <button class="btn pause">Пауза</button>
+        <input type="range" class="duration" min="0" max="100" value="0">
+        <audio src="music/zakat.mp3"></audio>
+      </div>
+      <div class="menu__right">
+        <label>
+          <input class="file" type="file">
+          <span class="song">Выбрать песню</span>
+        </label>
+      </div>
+    </div>
+  </div>
+
+  <script type="module" src="js/main.js"></script>
+</body>
+</html>
